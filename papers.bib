@@ -1,0 +1,446 @@
+% Academic papers related to StencilAlgebra.jl
+% Categories:
+%   1. Symbolic Stencil DSLs and PDE Form Languages
+%   2. Automatic Differentiation, Stencil Adjoints, and Sparse Jacobians
+%   3. Implicit Solvers, Structured Stencil Storage, Preconditioning, and GPUs
+%   4. Term Rewriting, Canonical Forms, and Equality Saturation
+%   5. Sparse Tensor and Structured Array Compilers
+
+% =============================================================================
+% 1. Symbolic Stencil DSLs and PDE Form Languages
+% =============================================================================
+
+@article{Louboutin2019Devito,
+  author       = {Louboutin, Mathias and Lange, Michael and Luporini, Fabio and Kukreja, Navjot and Witte, Philipp A. and Herrmann, Felix J. and Velesko, Paulius and Gorman, Gerard J.},
+  title        = {Devito (v3.1.0): An Embedded Domain-Specific Language for Finite Differences and Geophysical Exploration},
+  journal      = {Geoscientific Model Development},
+  volume       = {12},
+  number       = {3},
+  pages        = {1165--1187},
+  year         = {2019},
+  doi          = {10.5194/gmd-12-1165-2019},
+  url          = {https://gmd.copernicus.org/articles/12/1165/2019/}
+}
+
+@article{Luporini2020Devito,
+  author       = {Luporini, Fabio and Lange, Michael and Louboutin, Mathias and Kukreja, Navjot and H{\"u}ckelheim, Jan and Yount, Charles and Witte, Philipp A. and Kelly, Paul H. J. and Herrmann, Felix J. and Gorman, Gerard J.},
+  title        = {Architecture and Performance of {Devito}, a System for Automated Stencil Computation},
+  journal      = {ACM Transactions on Mathematical Software},
+  volume       = {46},
+  number       = {1},
+  pages        = {6:1--6:28},
+  year         = {2020},
+  doi          = {10.1145/3374916},
+  eprint       = {1807.03032},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/1807.03032}
+}
+
+@article{Bauer2021Lbmpy,
+  author       = {Bauer, Martin and K{\"o}stler, Harald and R{\"u}de, Ulrich},
+  title        = {lbmpy: Automatic Code Generation for Efficient Parallel Lattice {Boltzmann} Methods},
+  journal      = {Journal of Computational Science},
+  volume       = {49},
+  pages        = {101269},
+  year         = {2021},
+  doi          = {10.1016/j.jocs.2020.101269},
+  eprint       = {2001.11806},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2001.11806}
+}
+
+@article{Li2018HalideAD,
+  author       = {Li, Tzu-Mao and Gharbi, Micha{\"e}l and Adams, Andrew and Durand, Fr{\'e}do and Ragan-Kelley, Jonathan},
+  title        = {Differentiable Programming for Image Processing and Deep Learning in {Halide}},
+  journal      = {ACM Transactions on Graphics},
+  volume       = {37},
+  number       = {4},
+  pages        = {139:1--139:13},
+  year         = {2018},
+  doi          = {10.1145/3197517.3201383},
+  url          = {https://people.csail.mit.edu/tzumao/gradient_halide/}
+}
+
+@article{Alnaes2014UFL,
+  author       = {Aln{\ae}s, Martin S. and Logg, Anders and {\O}lgaard, Kristian B. and Rognes, Marie E. and Wells, Garth N.},
+  title        = {Unified Form Language: A Domain-Specific Language for Weak Formulations of Partial Differential Equations},
+  journal      = {ACM Transactions on Mathematical Software},
+  volume       = {40},
+  number       = {2},
+  pages        = {9:1--9:37},
+  year         = {2014},
+  doi          = {10.1145/2566630},
+  eprint       = {1211.4047},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/1211.4047}
+}
+
+@article{Rathgeber2016Firedrake,
+  author       = {Rathgeber, Florian and Ham, David A. and Mitchell, Lawrence and Lange, Michael and Luporini, Fabio and McRae, Andrew T. T. and Bercea, Gheorghe-Teodor and Markall, Graham R. and Kelly, Paul H. J.},
+  title        = {Firedrake: Automating the Finite Element Method by Composing Abstractions},
+  journal      = {ACM Transactions on Mathematical Software},
+  volume       = {43},
+  number       = {3},
+  pages        = {24:1--24:27},
+  year         = {2016},
+  doi          = {10.1145/2998441},
+  eprint       = {1501.01809},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/1501.01809}
+}
+
+@incollection{Lengauer2020ExaStencils,
+  author       = {Lengauer, Christian and Apel, Sven and Bolten, Matthias and Chiba, Shigeru and R{\"u}de, Ulrich and Teich, J{\"u}rgen and Gr{\"o}{\ss}linger, Armin and Hannig, Frank and K{\"o}stler, Harald and Claus, Lisa and Kronawitter, Stefan and Kuckuk, Sebastian and Rahn, Hannah and Schmitt, Christian},
+  title        = {{ExaStencils}: Advanced Multigrid Solver Generation},
+  booktitle    = {Software for Exascale Computing --- SPPEXA 2016--2019},
+  series       = {Lecture Notes in Computational Science and Engineering},
+  volume       = {136},
+  pages        = {405--452},
+  publisher    = {Springer},
+  year         = {2020},
+  doi          = {10.1007/978-3-030-47956-5_14},
+  url          = {https://link.springer.com/chapter/10.1007/978-3-030-47956-5_14}
+}
+
+@inproceedings{Gysi2015STELLA,
+  author       = {Gysi, Tobias and Osuna, Carlos and Fuhrer, Oliver and Bianco, Mauro and Schulthess, Thomas C.},
+  title        = {{STELLA}: A Domain-Specific Tool for Structured Grid Methods in Weather and Climate Models},
+  booktitle    = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '15)},
+  pages        = {41:1--41:12},
+  year         = {2015},
+  doi          = {10.1145/2807591.2807627},
+  url          = {https://doi.org/10.1145/2807591.2807627}
+}
+
+@article{Reguly2018OPS,
+  author       = {Reguly, Istv{\'a}n Z. and Mudalige, Gihan R. and Giles, Michael B.},
+  title        = {Loop Tiling in Large-Scale Stencil Codes at Run-Time with {OPS}},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  volume       = {29},
+  number       = {4},
+  pages        = {873--886},
+  year         = {2018},
+  doi          = {10.1109/TPDS.2017.2778161},
+  url          = {https://doi.org/10.1109/TPDS.2017.2778161}
+}
+
+% =============================================================================
+% 2. Automatic Differentiation, Stencil Adjoints, and Sparse Jacobians
+% =============================================================================
+
+@inproceedings{Huckelheim2019AdjointStencil,
+  author       = {H{\"u}ckelheim, Jan and Kukreja, Navjot and Narayanan, Sri Hari Krishna and Luporini, Fabio and Gorman, Gerard and Hovland, Paul},
+  title        = {Automatic Differentiation for Adjoint Stencil Loops},
+  booktitle    = {Proceedings of the 48th International Conference on Parallel Processing (ICPP 2019)},
+  pages        = {88:1--88:10},
+  year         = {2019},
+  doi          = {10.1145/3337821.3337906},
+  eprint       = {1907.02818},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/1907.02818}
+}
+
+@inproceedings{Moses2020Enzyme,
+  author       = {Moses, William S. and Churavy, Valentin},
+  title        = {Instead of Rewriting Foreign Code for Machine Learning, Automatically Synthesize Fast Gradients},
+  booktitle    = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume       = {33},
+  pages        = {12472--12485},
+  year         = {2020},
+  eprint       = {2010.01709},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2010.01709}
+}
+
+@inproceedings{Moses2021EnzymeGPU,
+  author       = {Moses, William S. and Churavy, Valentin and Paehler, Ludger and H{\"u}ckelheim, Jan and Narayanan, Sri Hari Krishna and Schanen, Michel and Doerfert, Johannes},
+  title        = {Reverse-Mode Automatic Differentiation and Optimization of {GPU} Kernels via {Enzyme}},
+  booktitle    = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '21)},
+  pages        = {61:1--61:16},
+  year         = {2021},
+  doi          = {10.1145/3458817.3476165},
+  url          = {https://doi.org/10.1145/3458817.3476165}
+}
+
+@article{Hill2025SparseConnectivityTracer,
+  author       = {Hill, Adrian and Dalle, Guillaume},
+  title        = {Sparser, Better, Faster, Stronger: Sparsity Detection for Efficient Automatic Differentiation},
+  journal      = {Transactions on Machine Learning Research},
+  year         = {2025},
+  eprint       = {2501.17737},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2501.17737}
+}
+
+@article{Dalle2025DifferentiationInterface,
+  author       = {Dalle, Guillaume and Hill, Adrian},
+  title        = {A Common Interface for Automatic Differentiation},
+  journal      = {arXiv preprint arXiv:2505.05542},
+  year         = {2025},
+  eprint       = {2505.05542},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2505.05542}
+}
+
+@article{Gowda2022Symbolics,
+  author       = {Gowda, Shashi and Ma, Yingbo and Cheli, Alessandro and Gw{\'o}{\'z}d{\'z}, Maja and Shah, Viral B. and Edelman, Alan and Rackauckas, Christopher},
+  title        = {High-Performance Symbolic-Numerics via Multiple Dispatch},
+  journal      = {ACM Communications in Computer Algebra},
+  volume       = {55},
+  number       = {3},
+  pages        = {92--96},
+  year         = {2022},
+  doi          = {10.1145/3511528.3511535},
+  eprint       = {2105.03949},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2105.03949}
+}
+
+@article{Gebremedhin2005Coloring,
+  author       = {Gebremedhin, Assefaw Hadish and Manne, Fredrik and Pothen, Alex},
+  title        = {What Color Is Your {Jacobian}? {Graph} Coloring for Computing Derivatives},
+  journal      = {SIAM Review},
+  volume       = {47},
+  number       = {4},
+  pages        = {629--705},
+  year         = {2005},
+  doi          = {10.1137/S0036144504444711},
+  url          = {https://doi.org/10.1137/S0036144504444711}
+}
+
+@book{Griewank2008EvaluatingDerivatives,
+  author       = {Griewank, Andreas and Walther, Andrea},
+  title        = {Evaluating Derivatives: Principles and Techniques of Algorithmic Differentiation},
+  edition      = {2nd},
+  publisher    = {SIAM},
+  year         = {2008},
+  doi          = {10.1137/1.9780898717761},
+  url          = {https://doi.org/10.1137/1.9780898717761}
+}
+
+@article{Gower2012EdgePushing,
+  author       = {Gower, Robert M. and Mello, Margarida P.},
+  title        = {A New Framework for the Computation of {Hessians}},
+  journal      = {Optimization Methods and Software},
+  volume       = {27},
+  number       = {2},
+  pages        = {251--273},
+  year         = {2012},
+  doi          = {10.1080/10556788.2011.580098},
+  eprint       = {2007.15040},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2007.15040}
+}
+
+% =============================================================================
+% 3. Implicit Solvers, Structured Storage, Preconditioning, and GPUs
+% =============================================================================
+
+@article{Falgout2021HypreGPU,
+  author       = {Falgout, Robert D. and Li, Ruipeng and Sjogreen, Bjorn and Wang, Lu and Yang, Ulrike Meier},
+  title        = {Porting {hypre} to Heterogeneous Computer Systems: Strategies and Experiences},
+  journal      = {Parallel Computing},
+  volume       = {108},
+  pages        = {102840},
+  year         = {2021},
+  doi          = {10.1016/j.parco.2021.102840},
+  url          = {https://www.osti.gov/servlets/purl/1823117}
+}
+
+@article{Kronbichler2019MatrixFree,
+  author       = {Kronbichler, Martin and Kormann, Katharina},
+  title        = {Fast Matrix-Free Evaluation of Discontinuous {Galerkin} Finite Element Operators},
+  journal      = {ACM Transactions on Mathematical Software},
+  volume       = {45},
+  number       = {3},
+  pages        = {29:1--29:40},
+  year         = {2019},
+  doi          = {10.1145/3325864},
+  eprint       = {1711.03590},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/1711.03590}
+}
+
+@article{Omlin2022ParallelStencil,
+  author       = {Omlin, Samuel and R{\"a}ss, Ludovic},
+  title        = {High-Performance {xPU} Stencil Computations in {Julia}},
+  journal      = {arXiv preprint arXiv:2211.15634},
+  year         = {2022},
+  eprint       = {2211.15634},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2211.15634}
+}
+
+@article{Churavy2022BridgingHPC,
+  author       = {Churavy, Valentin and Godoy, William F. and Bauer, Carsten and Ranocha, Hendrik and Schlottke-Lakemper, Michael and R{\"a}ss, Ludovic and Blaschke, Johannes and Giordano, Mos{\`e} and Schnetter, Erik and Omlin, Samuel and Vetter, Jeffrey S. and Edelman, Alan},
+  title        = {Bridging {HPC} Communities through the {Julia} Programming Language},
+  journal      = {arXiv preprint arXiv:2211.02740},
+  year         = {2022},
+  eprint       = {2211.02740},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2211.02740}
+}
+
+@article{Ramadhan2020Oceananigans,
+  author       = {Ramadhan, Ali and Wagner, Gregory L. and Hill, Chris and Campin, Jean-Michel and Churavy, Valentin and Besard, Tim and Souza, Andre and Edelman, Alan and Ferrari, Raffaele and Marshall, John},
+  title        = {{Oceananigans.jl}: Fast and Friendly Geophysical Fluid Dynamics on {GPUs}},
+  journal      = {Journal of Open Source Software},
+  volume       = {5},
+  number       = {53},
+  pages        = {2018},
+  year         = {2020},
+  doi          = {10.21105/joss.02018},
+  url          = {https://doi.org/10.21105/joss.02018}
+}
+
+@article{Ranocha2021SBP,
+  author       = {Ranocha, Hendrik},
+  title        = {{SummationByPartsOperators.jl}: A {Julia} Library of Provably Stable Discretization Operators},
+  journal      = {Journal of Open Source Software},
+  volume       = {6},
+  number       = {64},
+  pages        = {3454},
+  year         = {2021},
+  doi          = {10.21105/joss.03454},
+  url          = {https://doi.org/10.21105/joss.03454}
+}
+
+@article{Pal2024NonlinearSolve,
+  author       = {Pal, Avik and Holtorf, Flemming and Larsson, Axel and Loman, Torkel and Utkarsh and Sch{\"a}fer, Frank and Qu, Qingyu and Edelman, Alan and Rackauckas, Chris},
+  title        = {{NonlinearSolve.jl}: High-Performance and Robust Solvers for Systems of Nonlinear Equations in {Julia}},
+  journal      = {arXiv preprint arXiv:2403.16341},
+  year         = {2024},
+  eprint       = {2403.16341},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2403.16341}
+}
+
+@article{Melia2025JaxHPS,
+  author       = {Melia, Owen and Gillman, Adrianna and Willett, Rebecca},
+  title        = {jaxhps: A {Python} Package for Solving {PDEs} on {GPUs} with Hierarchical {Poincar\'e--Steklov} Schemes},
+  journal      = {Journal of Open Source Software},
+  volume       = {10},
+  number       = {113},
+  pages        = {8549},
+  year         = {2025},
+  doi          = {10.21105/joss.08549},
+  url          = {https://joss.theoj.org/papers/10.21105/joss.08549.pdf}
+}
+
+@inproceedings{Brown2012FieldSplit,
+  author       = {Brown, Jed and Knepley, Matthew G. and May, Dave A. and McInnes, Lois Curfman and Smith, Barry},
+  title        = {Composable Linear Solvers for Multiphysics},
+  booktitle    = {2012 11th International Symposium on Parallel and Distributed Computing (ISPDC)},
+  pages        = {55--62},
+  year         = {2012},
+  doi          = {10.1109/ISPDC.2012.16},
+  url          = {https://doi.org/10.1109/ISPDC.2012.16}
+}
+
+@article{Mardal2011OperatorPreconditioning,
+  author       = {Mardal, Kent-Andre and Winther, Ragnar},
+  title        = {Preconditioning Discretizations of Systems of Partial Differential Equations},
+  journal      = {Numerical Linear Algebra with Applications},
+  volume       = {18},
+  number       = {1},
+  pages        = {1--40},
+  year         = {2011},
+  doi          = {10.1002/nla.716},
+  url          = {https://doi.org/10.1002/nla.716}
+}
+
+@article{Chow2015FineGrainedILU,
+  author       = {Chow, Edmond and Patel, Aftab},
+  title        = {Fine-Grained Parallel Incomplete {LU} Factorization},
+  journal      = {SIAM Journal on Scientific Computing},
+  volume       = {37},
+  number       = {2},
+  pages        = {C169--C193},
+  year         = {2015},
+  doi          = {10.1137/140968896},
+  url          = {https://faculty.cc.gatech.edu/~echow/pubs/xparilu.pdf}
+}
+
+@article{Kelley1998PseudoTransient,
+  author       = {Kelley, C. T. and Keyes, David E.},
+  title        = {Convergence Analysis of Pseudo-Transient Continuation},
+  journal      = {SIAM Journal on Numerical Analysis},
+  volume       = {35},
+  number       = {2},
+  pages        = {508--523},
+  year         = {1998},
+  doi          = {10.1137/S0036142996304796},
+  url          = {https://doi.org/10.1137/S0036142996304796}
+}
+
+% =============================================================================
+% 4. Term Rewriting, Canonical Forms, and Equality Saturation
+% =============================================================================
+
+@article{Willsey2021Egg,
+  author       = {Willsey, Max and Nandi, Chandrakana and Wang, Yisu Remy and Flatt, Oliver and Tatlock, Zachary and Panchekha, Pavel},
+  title        = {egg: Fast and Extensible Equality Saturation},
+  journal      = {Proceedings of the ACM on Programming Languages},
+  volume       = {5},
+  number       = {POPL},
+  pages        = {23:1--23:29},
+  year         = {2021},
+  doi          = {10.1145/3434304},
+  eprint       = {2004.03082},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2004.03082}
+}
+
+@article{Cheli2021Metatheory,
+  author       = {Cheli, Alessandro},
+  title        = {{Metatheory.jl}: Fast and Elegant Algebraic Computation in {Julia} with Extensible Equality Saturation},
+  journal      = {Journal of Open Source Software},
+  volume       = {6},
+  number       = {59},
+  pages        = {3078},
+  year         = {2021},
+  doi          = {10.21105/joss.03078},
+  url          = {https://doi.org/10.21105/joss.03078}
+}
+
+@inproceedings{Yang2021Tensat,
+  author       = {Yang, Yichen and Phothilimthana, Phitchaya Mangpo and Wang, Yisu Remy and Willsey, Max and Roy, Sudip and Pienaar, Jacques},
+  title        = {Equality Saturation for Tensor Graph Superoptimization},
+  booktitle    = {Proceedings of Machine Learning and Systems (MLSys)},
+  volume       = {3},
+  pages        = {255--268},
+  year         = {2021},
+  eprint       = {2101.01332},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2101.01332}
+}
+
+% =============================================================================
+% 5. Sparse Tensor and Structured Array Compilers
+% =============================================================================
+
+@article{Chou2018TACO,
+  author       = {Chou, Stephen and Kjolstad, Fredrik and Amarasinghe, Saman},
+  title        = {Format Abstraction for Sparse Tensor Algebra Compilers},
+  journal      = {Proceedings of the ACM on Programming Languages},
+  volume       = {2},
+  number       = {OOPSLA},
+  pages        = {123:1--123:30},
+  year         = {2018},
+  doi          = {10.1145/3276493},
+  eprint       = {1804.10112},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/1804.10112}
+}
+
+@inproceedings{Ahrens2023Looplets,
+  author       = {Ahrens, Willow and Donenfeld, Daniel and Kjolstad, Fredrik and Amarasinghe, Saman},
+  title        = {Looplets: A Language for Structured Coiteration},
+  booktitle    = {Proceedings of the 21st ACM/IEEE International Symposium on Code Generation and Optimization (CGO '23)},
+  pages        = {41--54},
+  year         = {2023},
+  doi          = {10.1145/3579990.3580020},
+  eprint       = {2209.05250},
+  archivePrefix= {arXiv},
+  url          = {https://arxiv.org/abs/2209.05250}
+}

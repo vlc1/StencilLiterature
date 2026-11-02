@@ -1,0 +1,338 @@
+% Open-source software libraries related to StencilAlgebra.jl
+% Categories:
+%   1. StencilAlgebra ecosystem
+%   2. Julia stencil and PDE packages
+%   3. Julia AD, GPU, and symbolic infrastructure
+%   4. Julia linear/nonlinear solvers and sparse matrices
+%   5. External (Python / C / C++) stencil DSLs and HPC solver frameworks
+
+% =============================================================================
+% 1. StencilAlgebra Ecosystem
+% =============================================================================
+
+@software{stencilalgebra,
+  author       = {Le Chenadec, Vincent},
+  title        = {{StencilAlgebra.jl}: Symbolic Stencil Algebra with Compile-Time Sparsity and Differentiation on {Cartesian} Grids},
+  year         = {2026},
+  version      = {0.4.0-alpha},
+  url          = {https://github.com/vlc1/StencilAlgebra.jl},
+  note         = {Julia package}
+}
+
+@software{algebracore,
+  author       = {Le Chenadec, Vincent},
+  title        = {{AlgebraCore.jl}: Generic Verbs for Symbolic Algebra Packages in {Julia}},
+  year         = {2026},
+  version      = {0.1},
+  url          = {https://github.com/vlc1/AlgebraCore.jl},
+  note         = {Julia package}
+}
+
+@software{stencilalgebragpu,
+  author       = {Le Chenadec, Vincent},
+  title        = {{StencilAlgebraGPU.jl}: Device Evaluation and Assembly of {StencilAlgebra} Formulas via {KernelAbstractions.jl}},
+  year         = {2026},
+  version      = {0.1.0-rc4},
+  url          = {https://github.com/vlc1/StencilAlgebraGPU.jl},
+  note         = {Julia package}
+}
+
+@software{stencilsolve,
+  author       = {Le Chenadec, Vincent},
+  title        = {{StencilSolve.jl}: Matrix-Free Stencil Operators and Preconditioners for {SciML} Solvers},
+  year         = {2026},
+  version      = {0.1.0-rc1},
+  url          = {https://github.com/vlc1/StencilSolve.jl},
+  note         = {Julia package}
+}
+
+% =============================================================================
+% 2. Julia Stencil and PDE Packages
+% =============================================================================
+
+@software{parallelstencil,
+  author       = {Omlin, Samuel and R{\"a}ss, Ludovic and contributors},
+  title        = {{ParallelStencil.jl}: Write High-Level Code for Parallel High-Performance Stencil Computations on {GPUs} and {CPUs}},
+  year         = {2024},
+  url          = {https://github.com/omlins/ParallelStencil.jl},
+  note         = {Julia package}
+}
+
+@software{implicitglobalgrid,
+  author       = {Omlin, Samuel and R{\"a}ss, Ludovic and contributors},
+  title        = {{ImplicitGlobalGrid.jl}: Almost Trivial Distributed Parallelization of Stencil-Based {GPU} and {CPU} Applications on a Regular Staggered Grid},
+  year         = {2024},
+  url          = {https://github.com/eth-cscs/ImplicitGlobalGrid.jl},
+  note         = {Julia package}
+}
+
+@software{chmy,
+  author       = {R{\"a}ss, Ludovic and Utkin, Ivan and contributors},
+  title        = {{Chmy.jl}: An Expressive Multi-Architecture Grid-Based Sandbox using {KernelAbstractions.jl}},
+  year         = {2025},
+  version      = {0.1.27},
+  url          = {https://github.com/PTsolvers/Chmy.jl},
+  note         = {Julia package}
+}
+
+@software{oceananigans,
+  author       = {Wagner, Gregory L. and Ramadhan, Ali and Campin, Jean-Michel and Churavy, Valentin and Schloss, Chris and Marshall, John and contributors},
+  title        = {{Oceananigans.jl}: Fast and Friendly Geophysical Fluid Dynamics on {CPUs} and {GPUs}},
+  year         = {2025},
+  doi          = {10.21105/joss.02018},
+  url          = {https://github.com/CliMA/Oceananigans.jl},
+  note         = {Julia package}
+}
+
+@software{methodoflines,
+  author       = {Jones, Alex and Ma, Yingbo and Rackauckas, Christopher and contributors},
+  title        = {{MethodOfLines.jl}: Automatic Finite Difference Discretization of Symbolically-Defined {PDEs} in {Julia}},
+  year         = {2024},
+  url          = {https://github.com/SciML/MethodOfLines.jl},
+  note         = {Julia package}
+}
+
+@software{summationbypartsoperators,
+  author       = {Ranocha, Hendrik},
+  title        = {{SummationByPartsOperators.jl}: A {Julia} Library of Provably Stable Discretization Operators},
+  year         = {2021},
+  doi          = {10.21105/joss.03454},
+  url          = {https://github.com/ranocha/SummationByPartsOperators.jl},
+  note         = {Julia package}
+}
+
+@software{stencilsjl,
+  author       = {Schouten, Rafael and contributors},
+  title        = {{Stencils.jl}: Static Stencil Operations and Cellular Automata on {Julia} Arrays},
+  year         = {2024},
+  url          = {https://github.com/rafaqz/Stencils.jl},
+  note         = {Julia package}
+}
+
+@software{trixi,
+  author       = {Schlottke-Lakemper, Michael and Gassner, Gregor J. and Ranocha, Hendrik and Winters, Andrew R. and Jesse, Chan and contributors},
+  title        = {{Trixi.jl}: Adaptive High-Order Numerical Simulations of Hyperbolic {PDEs} in {Julia}},
+  year         = {2024},
+  doi          = {10.5281/zenodo.3996439},
+  url          = {https://github.com/trixi-framework/Trixi.jl},
+  note         = {Julia package}
+}
+
+% =============================================================================
+% 3. Julia AD, GPU, and Symbolic Infrastructure
+% =============================================================================
+
+@software{kernelabstractions,
+  author       = {Churavy, Valentin and Samaroo, Julian and Besard, Tim and contributors},
+  title        = {{KernelAbstractions.jl}: Heterogeneous Kernel Programming in {Julia}},
+  year         = {2025},
+  version      = {0.9.43},
+  doi          = {10.5281/zenodo.4024267},
+  url          = {https://github.com/JuliaGPU/KernelAbstractions.jl},
+  note         = {Julia package}
+}
+
+@software{gpuarrays,
+  author       = {Besard, Tim and Danisch, Simon and Churavy, Valentin and contributors},
+  title        = {{GPUArrays.jl}: Reusable {GPU} Array Functionality for {Julia}},
+  year         = {2025},
+  url          = {https://github.com/JuliaGPU/GPUArrays.jl},
+  note         = {Julia package}
+}
+
+@software{adaptjl,
+  author       = {Besard, Tim and Churavy, Valentin and contributors},
+  title        = {{Adapt.jl}: Adapt Forms of Data Structures for Heterogeneous Execution},
+  year         = {2024},
+  url          = {https://github.com/JuliaGPU/Adapt.jl},
+  note         = {Julia package}
+}
+
+@software{enzymejl,
+  author       = {Moses, William S. and Churavy, Valentin and contributors},
+  title        = {{Enzyme.jl}: {Julia} Bindings for the {Enzyme} Automatic Differentiator},
+  year         = {2025},
+  url          = {https://github.com/EnzymeAD/Enzyme.jl},
+  note         = {Julia package}
+}
+
+@software{sparseconnectivitytracer,
+  author       = {Hill, Adrian and Dalle, Guillaume},
+  title        = {{SparseConnectivityTracer.jl}: Fast Jacobian and Hessian Sparsity Detection in {Julia}},
+  year         = {2025},
+  url          = {https://github.com/adrhill/SparseConnectivityTracer.jl},
+  note         = {Julia package}
+}
+
+@software{differentiationinterface,
+  author       = {Dalle, Guillaume and Hill, Adrian},
+  title        = {{DifferentiationInterface.jl}: An Interface to Various Automatic Differentiation Backends in {Julia}},
+  year         = {2025},
+  url          = {https://github.com/JuliaDiff/DifferentiationInterface.jl},
+  note         = {Julia package}
+}
+
+@software{symbolicsjl,
+  author       = {Gowda, Shashi and Ma, Yingbo and Cheli, Alessandro and Rackauckas, Christopher and contributors},
+  title        = {{Symbolics.jl}: Fast and Modern Computer Algebra System for a Fast and Modern Language},
+  year         = {2024},
+  url          = {https://github.com/JuliaSymbolics/Symbolics.jl},
+  note         = {Julia package}
+}
+
+@software{metatheoryjl,
+  author       = {Cheli, Alessandro and contributors},
+  title        = {{Metatheory.jl}: General Purpose Metaprogramming, Algebraic Computation, and Equality Saturation with E-Graphs in {Julia}},
+  year         = {2024},
+  doi          = {10.21105/joss.03078},
+  url          = {https://github.com/JuliaSymbolics/Metatheory.jl},
+  note         = {Julia package}
+}
+
+@software{finchjl,
+  author       = {Ahrens, Willow and Amarasinghe, Saman and contributors},
+  title        = {{Finch.jl}: Sparse and Structured Array Fusion Compiler in {Julia}},
+  year         = {2025},
+  url          = {https://github.com/finch-tensor/Finch.jl},
+  note         = {Julia package}
+}
+
+% =============================================================================
+% 4. Julia Linear/Nonlinear Solvers and Sparse Matrices
+% =============================================================================
+
+@software{linearsolvejl,
+  author       = {Rackauckas, Christopher and Pal, Avik and Ma, Yingbo and contributors},
+  title        = {{LinearSolve.jl}: Common Interface for Linear Solvers in {Julia}},
+  year         = {2025},
+  url          = {https://github.com/SciML/LinearSolve.jl},
+  note         = {Julia package}
+}
+
+@software{nonlinearsolvejl,
+  author       = {Pal, Avik and Holtorf, Flemming and Larsson, Axel and Loman, Torkel and Rackauckas, Christopher and contributors},
+  title        = {{NonlinearSolve.jl}: High-Performance and Robust Solvers for Systems of Nonlinear Equations in {Julia}},
+  year         = {2025},
+  url          = {https://github.com/SciML/NonlinearSolve.jl},
+  note         = {Julia package}
+}
+
+@software{krylovjl,
+  author       = {Montoison, Alexis and Orban, Dominique},
+  title        = {{Krylov.jl}: A {Julia} Basket of Hand-Picked {Krylov} Methods},
+  year         = {2023},
+  doi          = {10.21105/joss.05187},
+  url          = {https://github.com/JuliaSmoothOptimizers/Krylov.jl},
+  note         = {Julia package}
+}
+
+@software{krylovpreconditioners,
+  author       = {Montoison, Alexis and Orban, Dominique and contributors},
+  title        = {{KrylovPreconditioners.jl}: Preconditioners for {CPU} and {GPU} Accelerated {Krylov} Methods},
+  year         = {2025},
+  url          = {https://github.com/JuliaSmoothOptimizers/KrylovPreconditioners.jl},
+  note         = {Julia package}
+}
+
+@software{sparsematricescsr,
+  author       = {Badia, Santiago and Verdugo, Francesc and contributors},
+  title        = {{SparseMatricesCSR.jl}: Compressed Sparse Row Matrices for {Julia}},
+  year         = {2024},
+  url          = {https://github.com/gridap/SparseMatricesCSR.jl},
+  note         = {Julia package}
+}
+
+@software{cudssjl,
+  author       = {Montoison, Alexis and Besard, Tim and contributors},
+  title        = {{CUDSS.jl}: {Julia} Interface for {NVIDIA cuDSS} (Direct Sparse Solver)},
+  year         = {2025},
+  url          = {https://github.com/exanauts/CUDSS.jl},
+  note         = {Julia package}
+}
+
+% =============================================================================
+% 5. External Stencil DSLs and HPC Frameworks (Python / C / C++)
+% =============================================================================
+
+@software{devito,
+  author       = {Luporini, Fabio and Louboutin, Mathias and Lange, Michael and Gorman, Gerard J. and Herrmann, Felix J. and contributors},
+  title        = {{Devito}: Symbolic Finite Difference Domain-Specific Language and Compiler},
+  year         = {2025},
+  doi          = {10.5281/zenodo.1188757},
+  url          = {https://github.com/devitocodes/devito},
+  note         = {Python/C stencil compiler}
+}
+
+@software{pystencils,
+  author       = {Bauer, Martin and Hennig, Frederik and H{\"o}tzer, Johannes and K{\"o}stler, Harald and R{\"u}de, Ulrich and contributors},
+  title        = {{pystencils}: Stencil Code Generation from Symbolic {SymPy} Descriptions for {CPUs} and {GPUs}},
+  year         = {2025},
+  url          = {https://i10git.cs.fau.de/pycodegen/pystencils},
+  note         = {Python/C/CUDA stencil code generator}
+}
+
+@software{halide,
+  author       = {Ragan-Kelley, Jonathan and Adams, Andrew and Li, Tzu-Mao and Sharlet, Dillon and Mullapudi, Ravi Teja and contributors},
+  title        = {{Halide}: A Language for Fast, Portable Computation on Images and Tensors},
+  year         = {2025},
+  url          = {https://github.com/halide/Halide},
+  note         = {C++/Python DSL with reverse-mode AD}
+}
+
+@software{gt4py,
+  author       = { Paredes, Enrique G. and Bianco, Mauro and Dahm, Johann and GridTools Contributors},
+  title        = {{GT4Py}: {GridTools} for {Python} --- A {DSL} for Weather and Climate Stencil Computations},
+  year         = {2025},
+  url          = {https://github.com/GridTools/gt4py},
+  note         = {Python/C++/DaCe stencil DSL}
+}
+
+@software{findiff,
+  author       = {Baer, Matthias},
+  title        = {{findiff}: Python Package for Finite Difference Numerical Derivatives and Partial Differential Equations in Any Number of Dimensions},
+  year         = {2024},
+  doi          = {10.21105/joss.00840},
+  url          = {https://github.com/maroba/findiff},
+  note         = {Python package}
+}
+
+@software{petsc,
+  author       = {Balay, Satish and Abhyankar, Shrirang and Adams, Mark F. and Benson, Steven and Brown, Jed and Brune, Peter and Buschelman, Kris and Constantinescu, Emil M. and Dalcin, Lisandro and Dener, Alp and Eijkhout, Victor and Faibussowitsch, Jacob and Gropp, William D. and Hapla, Vaclav and Isaac, Tobin and Jolivet, Pierre and Karpeev, Dmitry and Kaushik, Dinesh and Knepley, Matthew G. and Kong, Fande and Kruger, Scott and May, Dave A. and McInnes, Lois Curfman and Mills, Richard Tran and Mitchell, Lawrence and Munson, Todd and Roman, Jose E. and Rupp, Karl and Sanan, Patrick and Sarich, Jason and Smith, Barry F. and Zampini, Stefano and Zhang, Hong and Zhang, Hepeng and Zhang, Junchao},
+  title        = {{PETSc/TAO} Users Manual},
+  year         = {2025},
+  url          = {https://petsc.org/},
+  note         = {C/Fortran/Python library (DMDA, SNES, PCFieldSplit)}
+}
+
+@software{hypre,
+  author       = {Falgout, Robert D. and Baker, Allison H. and Chow, Edmond and Henson, Van Emden and Kolev, Tzanio and Li, Ruipeng and Osei-Kuffuor, Daniel and Schroder, Jacob B. and Sjogreen, Bjorn and Vassilevski, Panayot and Yang, Ulrike Meier},
+  title        = {{hypre}: Scalable Linear Solvers and Multigrid Methods},
+  year         = {2025},
+  url          = {https://github.com/hypre-space/hypre},
+  note         = {C library (Struct, SStruct, PFMG, SMG, BoomerAMG)}
+}
+
+@software{dealii,
+  author       = {Arndt, Daniel and Bangerth, Wolfgang and Blais, Bruno and Fehling, Marc and Gassm{\"o}ller, Rene and Heister, Timo and Heltai, Luca and Kronbichler, Martin and Maier, Matthias and Munch, Peter and Pelteret, Jean-Paul and Turcksin, Bruno and Wells, David},
+  title        = {The {deal.II} Finite Element Library},
+  year         = {2025},
+  url          = {https://dealii.org/},
+  note         = {C++ library (MatrixFree framework)}
+}
+
+@software{firedrake,
+  author       = {Ham, David A. and Kelly, Paul H. J. and Mitchell, Lawrence and Cotter, Colin J. and Kirby, Robert C. and Betteridge, Jack and Shapero, Daniel R. and Nixon-Hill, Reuben W. and Ward, Connor J. and Farrell, Patrick E. and Luporini, Fabio and Rathgeber, Florian and McRae, Andrew T. T. and Bercea, Gheorghe-Teodor},
+  title        = {{Firedrake} and {UFL}: Automated Finite Element System and Unified Form Language},
+  year         = {2025},
+  url          = {https://www.firedrakeproject.org/},
+  note         = {Python/C PDE compiler}
+}
+
+@software{jaxhps,
+  author       = {Melia, Owen and Gillman, Adrianna and Rebecca, Willett},
+  title        = {{jaxhps}: A {Python} Package for Solving {PDEs} on {GPUs} with Hierarchical {Poincar\'e--Steklov} Schemes},
+  year         = {2025},
+  doi          = {10.21105/joss.08549},
+  url          = {https://github.com/meliao/jaxhps},
+  note         = {Python/JAX package}
+}
